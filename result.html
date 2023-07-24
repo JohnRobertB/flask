@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+    <h1>Results</h1>
+    <p>Remaining Material: {{ remaining_material }}</p>
+    <p>Possible Products: {{ possible_products }}</p>
+    {% if low_material_alert %}
+    <p style="color: red;">Warning: Material is running low!</p>
+    {% endif %}
+    <a href="/">Back</a>
+</body>
+</html>

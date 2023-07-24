@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Material Tracker</title>
+</head>
+<body>
+        <h1>Material Tracker</h1>
+    {% if error %}
+    <p style="color: red;">{{ error }}</p>
+    {% endif %}
+    <form method="POST">
+        <label for="initial_material">Initial Material:</label><br>
+        <input type="number" id="initial_material" name="initial_material"><br>
+        <label for="material_per_product">Material per Product:</label><br>
+        <input type="number" id="material_per_product" name="material_per_product"><br>
+        <label for="material_used">Material Used:</label><br>
+        <input type="number" id="material_used" name="material_used"><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

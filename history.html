@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>History</title>
+</head>
+<body>
+    <h1>History</h1>
+    <table>
+        <tr>
+            <th>Initial Material</th>
+            <th>Material per Product</th>
+            <th>Material Used</th>
+        </tr>
+        {% for material in materials %}
+        <tr>
+            <td>{{ material.initial_material }}</td>
+            <td>{{ material.material_per_product }}</td>
+            <td>{{ material.material_used }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/">Back</a>
+</body>
+</html>
